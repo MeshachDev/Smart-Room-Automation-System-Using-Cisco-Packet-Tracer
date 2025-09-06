@@ -2,12 +2,12 @@
 
 ## Project Overview
 This project demonstrates a Room Automation System built using Cisco Packet Tracer IoT devices.  
-The system integrates multiple smart devices such as a Motion Detector, Home Gateway, Light, Fan, Tablet PC, Temperature Monitor, and Heating Element.  
+The system integrates multiple smart devices such as a Motion Detector, Home Gateway, Light, Fan, Tablet PC and Temperature Monitor.
 The goal is to automate room functions like lighting, temperature regulation, and fan control to create a smart and energy-efficient environment.
 
 ## Objectives
 - Automate lighting based on motion detection.  
-- Regulate temperature using a Temperature Monitor and Heating Element.  
+- Regulate temperature using a Temperature Monitor and Fan.  
 - Control devices remotely via a Tablet PC connected to the Home Gateway.  
 - Provide a scalable and user-friendly IoT setup for smart homes.
 
@@ -18,13 +18,12 @@ The goal is to automate room functions like lighting, temperature regulation, an
 - Light → turns ON/OFF based on motion rules  
 - Fan → maintains airflow when required  
 - Temperature Monitor → monitors ambient temperature  
-- Heating Element → activated when temperature drops below set threshold  
 
 ## Working Logic
 - If Motion Detector detects movement → Light turns ON.  
 - If no motion detected for a period → Light turns OFF.  
-- If Temperature < 20°C → Heating Element turns ON.  
-- If Temperature > 28°C → Fan turns ON.  
+- If Temperature < 10°C → Fan turns OFF.  
+- If Temperature > 10°C → Fan turns ON.  
 - All devices can also be controlled manually via Tablet PC.  
 
 ## How to Run
@@ -33,5 +32,5 @@ The goal is to automate room functions like lighting, temperature regulation, an
 3. Use the Tablet PC → Home Gateway Interface to log in and control devices.  
 4. Test the automation:  
    - Move the Motion Detector simulation bar to trigger the Light.  
-   - Adjust the Temperature Monitor values to trigger Fan/Heating Element.  
+   - Adjust the Temperature Monitor values to trigger Fan.
 
